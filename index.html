@@ -4,131 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tema 3</title>
+    <link rel="stylesheet" href="estile.css">
 </head>
 <body>
-  
-    <h1>so-tema3-html.</h1>
-<hr>
-<section class="introduccion">
-    <article class="resumen">
-         <p>En el tema 3 hemos aprendido que es un binario, octal, hexadecimal, codigo ASCII y mas, 
-           Hemos hecho ejercicios para pasar de binario a decimal, de decimal a octal etc...
 
-          Aparte hemos aprendido como un ordenador lee realmente el almacenamiento y como pasar de 1GB a 1Gib, cual
-         es la medida real que usa un ordenador a la hora de leer cuanta información hay o queda en un dispositivo.
-         </p>
-    </article>
+    <header>
+        <h1>Els nombres de l'ordinador</h1>
+    </header>
+    <hr>
 
-    <article class="listado">
-        <h2>Que debes saber si o si</h2>
-        <ul>
-            <li>La informacion del ordenador se representa con 0 y 1</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-        </ul>
+    <main>
 
-
-    </article>
-
-
-
-
-
-
-
-    </section>
-
-
-    
-    <section class="apartados">
-
-        
-     <article class="apartado">
-
-        <div class="img">
-            <img src="#">
-        </div>
-
-
-        <div class="texto">
-            <h2>El bit</h2>
-            <p>lorem7</p>
-         </div>
-
-            <a href="#">Ver sobre los bits</a>
-        </article>
-
-<!------------------------------------------------------------>
-
-    <article class="apartado">
-
-        <div class="img">
-            <img src="#">
-        </div>
-
-
-        <div class="texto">
-            <h2>El binari</h2>
-            <p>lorem7</p>
-         </div>
-
-            <a href="#">Ver sobre los binarios</a>
-        </article>
-
-<!------------------------------------------------------------>
-
-    <article class="apartado">
-
-            <div class="img">
-                <img src="#">
-            </div>
-
-
-            <div class="texto">
-                <h2>El hexadecimal</h2>
-                <p>lorem7</p>
-            </div>
-
-                <a href="#">Ver sobre el hexadecimal</a>
+        <section class="introduccio">
+            <article class="resum">
+                <p>En el tema 3 hem après què són el <strong>binari</strong>, l'<strong>octal</strong>,
+                   l'<strong>hexadecimal</strong>, el <strong>codi ASCII</strong> i més coses.
+                   Hem fet exercicis per passar de binari a decimal, de decimal a octal, etc.</p>
+                <p>A part, hem après com llegeix realment un ordinador l'emmagatzematge i com
+                   passar d'1 GB a 1 GiB, que és la mesura real que fa servir l'ordinador per saber
+                   quanta informació hi ha o en queda en un dispositiu.</p>
             </article>
 
-<!------------------------------------------------------------>
+            <article class="llistat">
+                <h2>Què has de saber sí o sí</h2>
+                <ul>
+                    <li>La informació de l'ordinador es representa només amb 0 i 1.</li>
+                    <li>Un <strong>bit</strong> és un 0 o un 1; un <strong>byte</strong> són 8 bits.</li>
+                    <li>El binari es converteix a decimal sumant les potències de 2 on hi ha un 1.</li>
+                    <li>L'hexadecimal fa servir 16 símbols: del 0 al 9 i de la A a la F.</li>
+                    <li>Un kB són 1000 bytes, però un KiB en són 1024.</li>
+                    <li>Cada lletra es guarda com un número, segons una taula com l'ASCII.</li>
+                </ul>
+            </article>
+        </section>
 
-    <article class="apartado">
+        <section class="apartats">
 
-            <div class="img">
-                <img src="#">
-            </div>
-
-
-            <div class="texto">
-                <h2>Les unitats</h2>
-                <p>lorem7</p>
-            </div>
-
-                <a href="#">Ver sobre les unitats</a>
+            <article class="apartat" id="bit">
+                <div class="text">
+                    <h2>El bit</h2>
+                    <p>El <strong>bit</strong> és la unitat més petita d'informació. Només pot valer
+                       0 o 1, com un interruptor que està apagat o encès. Això és perquè els circuits
+                       de l'ordinador només detecten si hi passa corrent o no.</p>
+                    <p>Si agrupem 8 bits, tenim un <strong>byte</strong>, que pot representar
+                       256 valors diferents (del 0 al 255).</p>
+                </div>
+                <a href="#binari">Veure sobre el binari</a>
             </article>
 
+            <article class="apartat" id="binari">
+                <div class="text">
+                    <h2>El binari</h2>
+                    <p>El sistema <strong>binari</strong> només té dues xifres, el 0 i l'1. Cada posició
+                       val el doble que l'anterior: 1, 2, 4, 8, 16, 32, 64, 128... Per passar a decimal,
+                       sumem el valor de les posicions on hi ha un 1.</p>
+                    <p>Per exemple, 1011 en binari és 8 + 2 + 1 = 11 en decimal.</p>
 
+                    <table>
+                        <tr>
+                            <td><strong>128</strong></td>
+                            <td><strong>64</strong></td>
+                            <td><strong>32</strong></td>
+                            <td><strong>16</strong></td>
+                            <td><strong>8</strong></td>
+                            <td><strong>4</strong></td>
+                            <td><strong>2</strong></td>
+                            <td><strong>1</strong></td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
 
+                    <div class="recorda">
+                        <p><strong>Recorda:</strong> la xuleta 128, 64, 32, 16, 8, 4, 2, 1 serveix per
+                           convertir qualsevol byte. La fila de baix és el 00001011, que val 11.</p>
+                    </div>
+                </div>
+                <a href="#hexadecimal">Veure sobre l'hexadecimal</a>
+            </article>
 
+            <article class="apartat" id="hexadecimal">
+                <div class="text">
+                    <h2>L'hexadecimal</h2>
+                    <p>L'<strong>hexadecimal</strong> té 16 símbols: 0-9 i A-F (A = 10, B = 11... F = 15).
+                       Cada xifra hexadecimal equival a 4 bits, i per això és una manera més curta
+                       d'escriure el binari. Per exemple, 255 és 11111111 en binari i FF en hexadecimal.</p>
+                    <p>També hi ha l'<strong>octal</strong>, que té 8 xifres (del 0 al 7) i on cada xifra
+                       equival a 3 bits.</p>
+                </div>
+                <a href="#unitats">Veure sobre les unitats</a>
+            </article>
 
+            <article class="apartat" id="unitats">
+                <div class="text">
+                    <h2>Les unitats</h2>
+                    <p>Els fabricants fan servir potències de 10 (kB, MB, GB), però l'ordinador compta
+                       amb potències de 2 (KiB, MiB, GiB). Per això un disc de 500 GB mostra uns
+                       465 GiB al sistema.</p>
 
+                    <table>
+                        <tr>
+                            <td><strong>Unitat (decimal)</strong></td>
+                            <td><strong>Bytes</strong></td>
+                            <td><strong>Unitat (binària)</strong></td>
+                            <td><strong>Bytes</strong></td>
+                        </tr>
+                        <tr>
+                            <td>1 kB</td>
+                            <td>1 000</td>
+                            <td>1 KiB</td>
+                            <td>1 024</td>
+                        </tr>
+                        <tr>
+                            <td>1 MB</td>
+                            <td>1 000 000</td>
+                            <td>1 MiB</td>
+                            <td>1 048 576</td>
+                        </tr>
+                        <tr>
+                            <td>1 GB</td>
+                            <td>1 000 000 000</td>
+                            <td>1 GiB</td>
+                            <td>1 073 741 824</td>
+                        </tr>
+                    </table>
 
+                    <div class="recorda">
+                        <p><strong>Compte:</strong> no confonguis GB amb GiB, ni <strong>b</strong> (bit)
+                           amb <strong>B</strong> (byte). La majúscula canvia el significat.</p>
+                    </div>
+                </div>
+                <a href="#lletres">Veure sobre les lletres</a>
+            </article>
 
+            <article class="apartat" id="lletres">
+                <div class="text">
+                    <h2>Les lletres</h2>
+                    <p>L'ordinador només entén números, així que cada lletra té assignat un codi.
+                       A la taula <strong>ASCII</strong>, per exemple, la lletra A és el 65
+                       (01000001 en binari). Les lletres especials, com ç, l·l o les vocals amb accent,
+                       necessiten codificacions més àmplies, com <strong>UTF-8</strong>.</p>
+                </div>
+            </article>
 
+        </section>
 
-
-
-
-
-
-
-    </section>
-
-
-
+    </main>
 
 </body>
 </html>
